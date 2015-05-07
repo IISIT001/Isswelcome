@@ -1,0 +1,2 @@
+$sap = Get-SPServiceApplicationProxy | where-object {$_.TypeName -eq “Usage and Health Data Collection Proxy”}
+$sap.Provision()
